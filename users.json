@@ -1,0 +1,21 @@
+[
+    {
+        "name": "dheeraj maurya",
+        "email": "dheerajm047@gmail.com",
+        "password": "Dhiru@2003",
+        "amount": "300",
+        "created_on": "2025-07-28 15:58:01"
+    },
+    {
+        "email": "dheerajmax93@gmail.com",
+        "password": "Dhiru@2003",
+        "amount": "3000",
+        "signup_time": "2025-07-28 23:35:24"
+    },
+    {
+        "email": "dheeraj.bca2022@rceroorkee.in",
+        "password": "Dhiru@123",
+        "amount": "300",
+        "signup_time": "2025-07-31 11:50:44"
+    }
+]

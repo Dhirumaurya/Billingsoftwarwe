@@ -1,0 +1,35 @@
+[
+    {
+        "client_id": "9876",
+        "transaction_id": "98765267",
+        "machine_id": "280648840998566",
+        "last_payment": "2025-07-31",
+        "valid_until": "2025-08-30",
+        "status": "active",
+        "is_active": true
+    },
+    {
+        "client_id": "09",
+        "transaction_id": "67865",
+        "machine_id": "e38947ac-e",
+        "last_payment": "2025-07-31",
+        "valid_until": "2025-08-30",
+        "is_active": false
+    },
+    {
+        "client_id": "NN-01-dhiru",
+        "transaction_id": "98726sb73653",
+        "machine_id": "f25d9882-6566-43ea-9312-e6967ebfe3cd",
+        "last_payment": "2025-07-28",
+        "valid_until": "2025-08-07",
+        "is_active": true
+    },
+    {
+        "client_id": "NN-02-dhiru",
+        "transaction_id": "98726sb73653",
+        "machine_id": "553e1e59-8f4b-4368-827a-9369b733b9c3",
+        "last_payment": "2025-07-28",
+        "valid_until": "2025-08-07",
+        "is_active": true
+    }
+]
