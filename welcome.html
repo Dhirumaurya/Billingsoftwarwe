@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Successful</title>
+    <style>
+        body { font-family: Arial; background: #e7f5ff; text-align: center; padding: 50px; }
+        .box {
+            background: white; display: inline-block;
+            padding: 30px; border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>🎉 Welcome {{ name }}!</h2>
+    <p>Your email <strong>{{ email }}</strong> has been successfully registered.</p>
+    <p>💰 Amount Paid: ₹{{ amount }}</p>
+    <p>Your license is now <strong>Active</strong> for 30 days.</p>
+    <a href="/">Go to Home</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; border: 1px solid #ccc; text-align: center; }
+        th { background-color: #f2f2f2; }
+        .valid { color: green; font-weight: bold; }
+        .expired { color: red; font-weight: bold; }
+        .btn {
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .btn-activate { background-color: green; color: white; }
+        .btn-deactivate { background-color: red; color: white; }
+    </style>
+</head>
+<body>
+    <h2>NN-Billing System - Admin Panel</h2>
+    <a href="/activate" class="btn btn-activate">➕ Activate New License</a>
+    <br><br>
+    <table>
+        <tr>
+            <th>Client ID</th>
+            <th>Machine ID</th>
+            <th>Last Payment</th>
+            <th>Valid Until</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        {% for lic in licenses %}
+        <tr>
+            <td>{{ lic.client_id }}</td>
+            <td>{{ lic.machine_id }}</td>
+            <td>{{ lic.last_payment }}</td>
+            <td>{{ lic.valid_until }}</td>
+            <td class="{{ 'valid' if lic.status == 'Valid' else 'expired' }}">{{ lic.status }}</td>
+            <td>
+                {% if lic.status == 'Valid' %}
+                <a href="/deactivate/{{ lic.client_id }}" class="btn btn-deactivate">Deactivate</a>
+                {% else %}
+                <a href="/activate/{{ lic.client_id }}" class="btn btn-activate">Activate</a>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

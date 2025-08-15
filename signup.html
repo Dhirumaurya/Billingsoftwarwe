@@ -1,0 +1,62 @@
+<!-- templates/signup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup - NN Billing System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Create Your Account</h2>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="text" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <input type="number" name="amount" placeholder="Amount Paid" min="0" required />
+        <button type="submit">Signup</button>
+    </form>
+</div>
+</body>
+</html>
